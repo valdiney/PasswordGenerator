@@ -4,6 +4,7 @@
 * @var $number - Bool - Se deseja que a class inclua números na senha gerada.
 * @var $length - Int - Tamanho da Senha Gerada.
 * @author Valdiney França <valdiney.2@hotmail.com>
+* @version 0.1
 */
 class PasswordGenerator
 {
@@ -36,3 +37,5 @@ class PasswordGenerator
 		return $this->result;
 	}
 }
+/* End of file PasswordGenerator.class.php */
+/* Location: class */
