@@ -6,7 +6,7 @@
 * @var $capital - Bool - Inclui letras Maiúscula nas senhas geradas.
 * @var $length - Int - Tamanho da Senha Gerada.
 * @author Valdiney França <valdiney.2@hotmail.com>
-* @version 0.1
+* @version 0.2
 */
 class PasswordGenerator
 {
