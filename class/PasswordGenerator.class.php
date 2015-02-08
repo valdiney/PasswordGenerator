@@ -10,9 +10,9 @@
 */
 class PasswordGenerator
 {
-	protected static $letters = "abcdefghijklmnopqrstuvwxyz";
+	protected static $letters = "abcdefghijlmnopqrstuvwxyzk";
 	protected static $number = 0123456789;
-	protected static $symbols = "!@#$%*-";
+	protected static $symbols = "-!*@#%$";
 	protected static $character = null;
 	protected static $result = null;
 
