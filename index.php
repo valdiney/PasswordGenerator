@@ -7,8 +7,7 @@
 <body>
 	<?php 
 	   require_once("class/PasswordGenerator.class.php");
-	   $senha = new PasswordGenerator(true, 6);
-       echo $senha->generate();
+	   echo PasswordGenerator::generate(true, true, true, 10);
 	?>
 </body>
 </html>

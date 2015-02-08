@@ -2,39 +2,47 @@
 /**
 * Class para gerar de Senhas
 * @var $number - Bool - Se deseja que a class inclua números na senha gerada.
+* @var $symbols - Bool - Inclui caracteres especiais nas senhas geradas.
+* @var $capital - Bool - Inclui letras Maiúscula nas senhas geradas.
 * @var $length - Int - Tamanho da Senha Gerada.
 * @author Valdiney França <valdiney.2@hotmail.com>
 * @version 0.1
 */
 class PasswordGenerator
 {
-	private $theInternalLetters = "abcdefghijklmnopqrstuvwxyz";
-	private $theInternalNumbers = 123456789;
-	private $character = null;
-	private $length = null;
-	private $result = null;
+	protected static $letters = "abcdefghijklmnopqrstuvwxyz";
+	protected static $number = 0123456789;
+	protected static $symbols = "!@#$%*-";
+	protected static $character = null;
+	protected static $result = null;
 
-	public function __construct($number = true, $length = 8)
+	public static function generate($number = true, $symbols = false, $capital = false, $length = 8)
 	{
-		$this->length = $length;
-		$this->character .= $this->theInternalLetters;
+		self::$character .= self::$letters;
 
-		if ($number) 
+		if ($number)
 		{
-			$this->character .= $this->theInternalNumbers;
+			self::$character .= self::$number;
 		}
-	}
 
-	public function generate()
-	{
-		$characterLength = strlen($this->character);
-		for ($i = 1; $i < $this->length; $i++)
+		if ($symbols)
+		{
+			self::$character .= self::$symbols;
+		}
+
+		if ($capital)
+		{
+			self::$character .= strtoupper(self::$letters);
+		}
+
+		$characterLength = strlen(self::$character);
+		for ($i = 1; $i < $length; $i++)
 		{
 			$randomic = mt_rand(1, $characterLength);
-			$this->result .= $this->character[$randomic-1];
+			self::$result .= self::$character[$randomic-1];
 		}
 
-		return $this->result;
+		return self::$result;
 	}
 }
 /* End of file PasswordGenerator.class.php */

@@ -6,8 +6,7 @@ Class para gerar Senhas.
 ```php
 <?php 
 	require_once("class/PasswordGenerator.class.php");
-	$senha = new PasswordGenerator(true, 10);
-    echo $senha->generate();
-    /*Pode gerar algo como: 9vb5behoz*/
+	echo PasswordGenerator::generate(true, true, true, 10);
+    /* Pode gerar algo como: QaYE%1Gfu */
 ?>
 ```
