@@ -1,7 +1,16 @@
 # PasswordGenerator
 Class para gerar Senhas.
 
+<h3>Como funciona</h3>
+<p>
+	A classe é abstrata, o que significa que não precisamos instanciá-la para usar seus recursos fazendo com que o seu uso seja ainda mais simples.
+</p>
+
 <h3>Exemplo de Uso</h3>
+```txt
+echo PasswordGenerator::generate([Números], [Caracteres Especiais ], [Letras Maiúscula], [Tamanho da Senha]);
+
+```
 
 ```php
 <?php 
