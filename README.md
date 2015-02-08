@@ -8,17 +8,29 @@ Class para gerar Senhas.
 
 <h3>Como funciona</h3>
 <p>
-	O Método <b>generate()</b>  recebe quatro argumentos, sendo os três iniciais Booleanos [true] ou [false] e o ultimo argumento um número inteiro que representa o tamanho da senha que será gerada.
+	O Método <b>generate()</b>  recebe quatro argumentos, sendo o primeiro argumento um número inteiro que representa o tamanho da senha que será gerada. Os três seguintes são Booleanos [true] ou [false].
 </p>
+
 ```txt
-PasswordGenerator::generate([Números], [Caracteres Especiais ], [Letras Maiúsculas], [Tamanho da Senha]);
+PasswordGenerator::generate($length = 8, [Números], [Caracteres Especiais ], [Letras Maiúsculas]);
 
 ```
 <h3>Exemplo de uso</h3>
 ```php
 <?php 
 	require_once("class/PasswordGenerator.class.php");
-	echo PasswordGenerator::generate(true, true, true, 10);
-    /* Pode gerar algo como: QaYE%1Gfu */
+
+	/**
+    * Gera uma senha com todos os recursos da classe.
+    * Algo como: QaYE%1Gfu 
+    */
+	echo PasswordGenerator::generate(10);
+
+	/**
+    * Gera uma senha omitindo alguns recursos.
+    * Algo como: hkrplcgyl 
+    */
+	echo PasswordGenerator::generate(10, false, false, false);
+   
 ?>
 ```
