@@ -12,8 +12,7 @@ Class para gerar Senhas.
 </p>
 
 ```txt
-PasswordGenerator::generate($length = 8, [Números], [Caracteres Especiais ], [Letras Maiúsculas]);
-
+PasswordGenerator::generate([Tamanho da Senha], [Números], [Caracteres Especiais ], [Letras Maiúsculas]);
 ```
 <h3>Exemplo de uso</h3>
 ```php
