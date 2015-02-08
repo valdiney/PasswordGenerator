@@ -1,9 +1,9 @@
 <?php 
 /**
-* Class para gerar de Senhas
+* Class para gerar Senhas
 * @var $number - Bool - Se deseja que a class inclua números na senha gerada.
 * @var $symbols - Bool - Inclui caracteres especiais nas senhas geradas.
-* @var $capital - Bool - Inclui letras Maiúscula nas senhas geradas.
+* @var $upperCase - Bool - Inclui letras Maiúscula nas senhas geradas.
 * @var $length - Int - Tamanho da Senha Gerada.
 * @author Valdiney França <valdiney.2@hotmail.com>
 * @version 0.2
@@ -16,7 +16,7 @@ class PasswordGenerator
 	protected static $character = null;
 	protected static $result = null;
 
-	public static function generate($number = true, $symbols = false, $capital = false, $length = 8)
+	public static function generate($number = true, $symbols = false, $upperCase = false, $length = 8)
 	{
 		self::$character .= self::$letters;
 
@@ -30,7 +30,7 @@ class PasswordGenerator
 			self::$character .= self::$symbols;
 		}
 
-		if ($capital)
+		if ($upperCase)
 		{
 			self::$character .= strtoupper(self::$letters);
 		}
