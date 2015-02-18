@@ -6,8 +6,8 @@
 </head>
 <body>
 	<?php 
-	   require_once("class/PasswordGenerator.class.php");
-	   echo PasswordGenerator::generate(10);
+	   require_once("generator/PasswordGenerator.php");
+	   echo generator\PasswordGenerator::generate(10);
 	?>
 </body>
 </html>
