@@ -8,7 +8,7 @@ Class para gerar Senhas.
 
 <h3>Instalação</h3>
 <p>
-	Você pode instalar aclass em seu projeto usando o <b>composer</b>. Basta adicionar ao seu <b>composer.json</b>: require: "valdiney/password-generator": "dev-master"
+	Você pode instalar a class em seu projeto usando o <b>composer</b>. Basta adicionar ao seu <b>composer.json</b>: require: "valdiney/password-generator": "dev-master"
 </p>
 
 <a href="https://packagist.org/packages/valdiney/password-generator" target="_black">Visuaizar no Packagist</a>
