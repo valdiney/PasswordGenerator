@@ -6,6 +6,10 @@ Class para gerar Senhas.
 	A classe é abstrata, o que significa que não precisamos instanciá-la para usar seus recursos, fazendo com que o seu uso seja ainda mais fácil.
 </p>
 
+<p>
+	Você também pode instalar essa class em seu projeto usando o <b>composer</b>. Basta adicionar ao seu <b>composer.json</b>: require: "valdiney/password-penerator": "dev-master"
+</p>
+
 <h3>Como funciona</h3>
 <p>
 	O Método <b>generate()</b>  recebe quatro argumentos, sendo o primeiro argumento um número inteiro que representa o tamanho da senha que será gerada. Os três seguintes são Booleanos [true] ou [false].
