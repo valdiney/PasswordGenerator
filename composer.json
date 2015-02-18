@@ -1,5 +1,5 @@
 {
-	"name":"valdiney/Password-Generator",
+	"name":"valdiney/password-penerator",
 	"description":"Using this class you can generate powerful password.",
 	"type":"class",
 	"keywords":["password","generate"],
