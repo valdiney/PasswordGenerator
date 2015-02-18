@@ -3,11 +3,12 @@ Class para gerar Senhas.
 
 <h3>Descrição</h3>
 <p>
-	A classe é abstrata, o que significa que não precisamos instanciá-la para usar seus recursos, fazendo com que o seu uso seja ainda mais fácil.
+	Com essa classe você conseguirá gerar poderosas senhas de forma muito simples e inteligente. Podendo gerar senhas contendo números, letras maiúsculas e minúsculas e caracteres especiais... Você também pode declinar de algumas dessas características, mas recomendados que use todo o recurso da classe para que a sua senha tenha uma estrutura forte!
 </p>
 
+<h3>Instalação</h3>
 <p>
-	Você também pode instalar essa class em seu projeto usando o <b>composer</b>. Basta adicionar ao seu <b>composer.json</b>: require: "valdiney/password-penerator": "dev-master"
+	Você pode instalar aclass em seu projeto usando o <b>composer</b>. Basta adicionar ao seu <b>composer.json</b>: require: "valdiney/password-generator": "dev-master"
 </p>
 
 <a href="https://packagist.org/packages/valdiney/password-generator" target="_black">Visuaizar no Packagist</a>
