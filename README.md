@@ -17,19 +17,19 @@ PasswordGenerator::generate([Tamanho da Senha], [Números], [Caracteres Especiai
 <h3>Exemplo de uso</h3>
 ```php
 <?php 
-	require_once("class/PasswordGenerator.class.php");
+	require_once("generator/PasswordGenerator.php");
 
 	/**
     * Gera uma senha com todos os recursos da classe.
     * Algo como: QaYE%1Gfu 
     */
-	echo PasswordGenerator::generate(10);
+	 echo generator\PasswordGenerator::generate(10);;
 
 	/**
     * Gera uma senha omitindo alguns recursos.
     * Algo como: hkrplcgyl 
     */
-	echo PasswordGenerator::generate(10, false, false, false);
+	echo generator\PasswordGenerator::generate(10, false, false, false);
    
 ?>
 ```
