@@ -11,8 +11,8 @@
 	}
 	],
 	"autoload": {
-		"psr-0": {
-			"": "valdiney"
-		}
+		"classmap": [
+                  "valdiney/"
+                 ]
 	}
 }
