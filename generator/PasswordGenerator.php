@@ -8,8 +8,6 @@
 * @author Valdiney França <valdiney.2@hotmail.com>
 * @version 0.2
 */
-namespace generator;
-
 class PasswordGenerator
 {
 	protected static $letters = "abcdefghijlmnopqrstuvwxyzk";
@@ -22,21 +20,18 @@ class PasswordGenerator
 	{
 		self::$character .= self::$letters;
 
-		if ($number)
-		{
+		if ($number) {
 			self::$character .= self::$number;
 		}
 
-		if ($symbols)
-		{
+		if ($symbols) {
 			self::$character .= self::$symbols;
 		}
-
-		if ($upperCase)
-		{
+		
+		if ($upperCase) {
 			self::$character .= strtoupper(self::$letters);
 		}
-
+		
 		$characterLength = strlen(self::$character);
 		for ($i = 1; $i < $length; $i++)
 		{
@@ -47,5 +42,5 @@ class PasswordGenerator
 		return self::$result;
 	}
 }
-/* End of file PasswordGenerator.php */
-/* Location: generator */
+/* End of file PasswordGenerator.class.php */
+/* Location: class */
