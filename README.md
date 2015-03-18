@@ -30,7 +30,7 @@ PasswordGenerator::generate([Tamanho da Senha], [Números], [Caracteres Especiai
     * Gera uma senha com todos os recursos da classe.
     * Algo como: QaYE%1Gfu 
     */
-	 echo generator\PasswordGenerator::generate(10);;
+	 echo generator\PasswordGenerator::generate(10);
 
 	/**
     * Gera uma senha omitindo alguns recursos.
