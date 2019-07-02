@@ -36,5 +36,5 @@ PasswordGenerator::generate([Tamanho da Senha], [Números], [Caracteres Especiai
     * Gera uma senha omitindo alguns recursos.
     * Algo como: hkrplcgyl 
     */
-	echo generator\PasswordGenerator::generate(10, false, false, false);
+    echo generator\PasswordGenerator::generate(10, false, false, false);
 ```
