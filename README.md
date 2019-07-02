@@ -22,7 +22,7 @@ Class para gerar Senhas.
 PasswordGenerator::generate([Tamanho da Senha], [Números], [Caracteres Especiais ], [Letras Maiúsculas]);
 ```
 <h3>Exemplo de uso</h3>
-````php
+```php
 <?php 
 	require_once("generator/PasswordGenerator.php");
 
