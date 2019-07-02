@@ -23,7 +23,6 @@ PasswordGenerator::generate([Tamanho da Senha], [Números], [Caracteres Especiai
 ```
 <h3>Exemplo de uso</h3>
 ```php
-<?php 
 	require_once("generator/PasswordGenerator.php");
 
 	/**
@@ -38,5 +37,5 @@ PasswordGenerator::generate([Tamanho da Senha], [Números], [Caracteres Especiai
     */
 	echo generator\PasswordGenerator::generate(10, false, false, false);
    
-?>
+
 ```
